@@ -1,4 +1,4 @@
-const Traceroute = require('nodejs-traceroute');
+const Traceroute = require('./traceroute-lib/index');
 
 import { Response } from 'express';
 import { hopInfoFromIp, Hop } from './geo-locator';
@@ -51,6 +51,10 @@ export async function traceRoute(url: string, clientConnection: Response) {
       if (ip == 'Request timed out.') {
         response.failureReason = 'timeout';
         publishEvent(response, clientConnection);
+        return;
+      }
+
+      if(ip == '*'){
         return;
       }
 
