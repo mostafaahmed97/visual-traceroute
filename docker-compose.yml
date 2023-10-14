@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./server
+
+    container_name: trace-backend
+
+    ports:
+      - 3000:3000
+
+  frontend:
+    build: ./frontend
+
+    container_name: trace-frontend
+
+    ports:
+      - 8080:8080
