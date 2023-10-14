@@ -26,7 +26,7 @@ const { state: globeState } = useGlobeStore();
   transform: translate(-0%, -50%);
 
   width: 250px;
-  height: 66vh;
+  height: 80vh;
   border-radius: 20px;
   padding: 5px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
