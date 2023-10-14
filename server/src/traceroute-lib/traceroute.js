@@ -4,7 +4,7 @@ exports.Traceroute = void 0;
 const flag_1 = require("./flag");
 const process_1 = require("./process");
 class Traceroute extends process_1.Process {
-    constructor(ipVersion = '', sendwait = 0.4) {
+    constructor(ipVersion = '', sendwait = 1) {
         const args = ['-q', '1', '-z', `${sendwait}`, '-n', '-I'];
         const ipFlag = flag_1.Flag.getIpFlag(ipVersion);
         if (ipFlag) {

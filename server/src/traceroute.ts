@@ -78,7 +78,7 @@ export async function traceRoute(url: string, clientConnection: Response) {
     })
     .on('close', (code) => {
       console.log(`close: code ${code}`);
-      processTerminated = true;
+      // processTerminated = true;
     });
 
   tracer.trace(url);
