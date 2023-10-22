@@ -28,7 +28,7 @@ What happens is our request goes through multiple intermediate routers, Tracerou
 
 ![](./docs/multi-hop.png)
 
-Some of the routers hops along our path will be private & won't be be able to back send a response, others might timeout while responding to us. But overall we get a pretty solid idea of how the path is. 
+Some of the routers hops along our path will be private & won't be be able to back send a response, others might timeout while responding to us. But overall we get a pretty solid idea of what the path is. 
 
 You can run it on your computer to examine the output.
 ```bash
